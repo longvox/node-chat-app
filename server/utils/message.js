@@ -1,6 +1,6 @@
 var moment = require('moment');
 
-var generateMessage = (from, text) => {
+var generateMessage = (from, text, user) => {
   return {
     from,
     text,
@@ -16,4 +16,4 @@ var generateLocationMessage = (from, latitude, longitude) => {
   };
 };
 
-module.exports = {generateMessage, generateLocationMessage};
+module.exports = { generateMessage, generateLocationMessage };
